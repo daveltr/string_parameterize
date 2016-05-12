@@ -22,4 +22,8 @@ defmodule StringParameterizeTest do
     assert StringParameterize.parameterize_file_path(path, separator: ";") == "/tmp/abc/123/testfilename;1234-adkfajdl--.mp4"
   end
 
+  test "parameterize_file_path with only a filename" do
+    path = "testFileName 1234-adkfajdl.mp4"
+    assert StringParameterize.parameterize_file_path(path) == "./testfilename_1234-adkfajdl.mp4"
+  end
 end

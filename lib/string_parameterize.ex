@@ -31,7 +31,7 @@ defmodule StringParameterize do
       iex> StringParameterize.parameterize_file_path("/tmp/1234APath/dave was here.Mp4")
       "/tmp/1234APath/dave_was_here.mp4"
   """
-  @spec parameterize(String.t(), Keyword.t() ) :: String.t()
+  @spec parameterize_file_path(String.t(), Keyword.t() ) :: String.t()
   def parameterize_file_path(file_path, options \\[]) do
     separator = Keyword.get(options, :separator, "_")
     extension = Path.extname(file_path)
