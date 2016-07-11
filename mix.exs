@@ -20,7 +20,7 @@ defmodule StringParameterize.Mixfile do
   end
 
   defp deps do
-    []
+    [{:dialyxir, "~> 0.3", only: [:dev]}]
   end
 
   defp package do
