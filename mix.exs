@@ -3,8 +3,8 @@ defmodule StringParameterize.Mixfile do
 
   def project do
     [app: :string_parameterize,
-     version: "0.1.0",
-     elixir: "~> 1.2",
+     version: "0.2.0",
+     elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps(),
